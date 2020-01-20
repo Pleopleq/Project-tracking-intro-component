@@ -1,9 +1,4 @@
 // GLOBAL STYLES AND VARIABLES
-
-*{
-    padding: 0%;
-    margin: 0%;
-}
 $primary-color: hsl(0, 100%, 68%);
 $very-dark-blue: hsl(230, 29%, 20%);
 $dark-grayish-blue: hsl(230, 11%, 40%);
@@ -11,6 +6,12 @@ $grayish-blue: hsl(231, 7%, 65%);
 $light-grayish-blue: hsl(207, 33%, 95%);
 $body-font: 'Barlow', sans-serif;
 $header-font: 'Barlow Condensed', sans-serif;
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
 
 html{
     font-size: 18px;
@@ -31,29 +32,35 @@ html{
 
 .blockHero{
     display: grid;
+    width: 100vw; 
+    overflow: hidden;
+    margin-bottom: 2rem;
     .blockHero__image{
-        width: 28.5rem;
+        width: 136%;
     }
 }
 
 // ATTRIBUTES STYLES
 
 .blockAttributes{
-    display: inline-block;
-    padding: 6%;
+    display: flex;
+    flex-wrap: row;
+    align-content: center;
+    padding: 6% 6% 0% 6%;
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1.5px;
     .blockAttributes__lineEmphasis{
         background-color: $very-dark-blue;
         color:$light-grayish-blue;
-        text-align: inline;
+        align-self: center;
         font-weight: 700;
         padding: 0.2rem 0.5rem 0.2rem 0.5rem;
         border-radius: 50px;
         margin-right: 1rem;
     }
     .blockAttributes__lineNormal{
+        align-self: center;
         margin-right: 1.2rem;
         color: $grayish-blue;
         letter-spacing: 2.5px;
@@ -77,5 +84,31 @@ html{
         color: $very-dark-blue;
         padding-right: 3rem;
         padding-bottom: 1rem; 
+    }
+}
+
+//CALL TO ACTION STYLES 
+.blockCTA{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+    .blockCTA__button{
+        padding: 12px 24px 12px 24px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-family:$header-font;
+        border: none;
+        color: white;
+        background-color: $primary-color;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+    }
+    .blockCTA__lineNormal{
+        text-transform: uppercase;
+        font-size: 14px;
+        color: $grayish-blue;
+        font-family: $header-font;
+        align-self: center;
+        letter-spacing: 1.5px;
     }
 }
