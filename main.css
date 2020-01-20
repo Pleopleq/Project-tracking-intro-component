@@ -1,0 +1,66 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+}
+
+.blockNavbar {
+  display: flex;
+  padding: 10%;
+}
+.blockNavbar .blockNavbar__logo {
+  width: 1rem;
+}
+
+.blockHero {
+  display: grid;
+}
+.blockHero .blockHero__image {
+  width: 28.5rem;
+}
+
+.blockAttributes {
+  display: inline-block;
+  padding: 6%;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+.blockAttributes .blockAttributes__lineEmphasis {
+  background-color: #242942;
+  color: #eef3f6;
+  text-align: inline;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  border-radius: 50px;
+  margin-right: 1rem;
+}
+.blockAttributes .blockAttributes__lineNormal {
+  margin-right: 1.2rem;
+  color: #a0a1ac;
+  letter-spacing: 2.5px;
+}
+
+.blockDescription {
+  display: grid;
+  padding: 6%;
+}
+.blockDescription .blockDescription__header {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  color: #242942;
+  padding-bottom: 0.5rem;
+}
+.blockDescription .blockDescription__paragraph {
+  color: #242942;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */
