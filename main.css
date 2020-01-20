@@ -2,10 +2,22 @@
   padding: 0%;
   margin: 0%;
 }
+
 html {
   font-size: 18px;
   font-family: "Barlow", sans-serif;
 }
+
+.artBackground {
+  width: 52%;
+  position: absolute;
+  right: 0;
+  height: 78%;
+  border-bottom-left-radius: 48px;
+  background-color: #eef3f6;
+  z-index: -1;
+}
+
 .blockNavbar {
   display: flex;
   padding: 10%;
@@ -13,6 +25,7 @@ html {
 .blockNavbar .blockNavbar__logo {
   width: 1rem;
 }
+
 .blockHero {
   display: grid;
   width: 100vw;
@@ -22,6 +35,7 @@ html {
 .blockHero .blockHero__image {
   width: 136%;
 }
+
 .blockAttributes {
   display: flex;
   flex-wrap: row;
@@ -46,6 +60,7 @@ html {
   color: #a0a1ac;
   letter-spacing: 2.5px;
 }
+
 .blockDescription {
   display: grid;
   padding: 6%;
@@ -63,6 +78,7 @@ html {
   padding-right: 3rem;
   padding-bottom: 1rem;
 }
+
 .blockCTA {
   display: flex;
   justify-content: space-around;
@@ -87,3 +103,5 @@ html {
   align-self: center;
   letter-spacing: 1.5px;
 }
+
+/*# sourceMappingURL=main.css.map */

@@ -18,6 +18,16 @@ html{
     font-family: $body-font;
 }
 
+.artBackground{
+    width: 52%;
+    position: absolute;
+    right: 0;
+    height: 78%;
+    border-bottom-left-radius: 48px;
+    background-color: $light-grayish-blue;
+    z-index: -1;
+}
+
 // NAVBAR STYLES
 
 .blockNavbar{
