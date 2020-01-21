@@ -21,9 +21,39 @@ html {
 .blockNavbar {
   display: flex;
   padding: 10%;
+  justify-content: space-between;
 }
 .blockNavbar .blockNavbar__logo {
-  width: 1rem;
+  width: 8%;
+  align-self: center;
+}
+
+.blockHamMenu {
+  display: inline-block;
+  cursor: pointer;
+}
+.blockHamMenu .blockHamMenu__barOne,
+.blockHamMenu .blockHamMenu__barTwo,
+.blockHamMenu .blockHamMenu__barThree {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .blockHamMenu__barOne {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .blockHamMenu__barTwo {
+  opacity: 0;
+}
+
+.change .blockHamMenu__barThree {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .blockHero {
