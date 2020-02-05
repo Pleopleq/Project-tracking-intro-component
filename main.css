@@ -20,11 +20,11 @@ html {
 
 .blockNavbar {
   display: flex;
-  padding: 10%;
+  padding: 2rem;
   justify-content: space-between;
 }
 .blockNavbar .blockNavbar__logo {
-  width: 8%;
+  width: 1.5rem;
   align-self: center;
 }
 
@@ -54,6 +54,48 @@ html {
 .change .blockHamMenu__barThree {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.blockDropdownMenu {
+  display: none;
+  background-color: white;
+  margin: 1rem 4rem 1rem 4rem;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-box-shadow: 10px 10px 31px -19px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 31px -19px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 31px -19px rgba(0, 0, 0, 0.75);
+}
+.blockDropdownMenu .blocDropdownMenu__dropdown {
+  list-style-type: none;
+  text-align: center;
+}
+.blockDropdownMenu .blocDropdownMenu__dropdown a {
+  text-decoration: none;
+  color: #242942;
+}
+.blockDropdownMenu .blocDropdownMenu__dropdown li {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+.blockDropdownMenu .blocDropdownMenu__dropdown :nth-child(1) {
+  padding-top: 0.5rem;
+}
+.blockDropdownMenu .blocDropdownMenu__dropdown :nth-child(3) {
+  border-bottom: 1px solid #eef3f6;
+  padding-bottom: 0.5rem;
+}
+.blockDropdownMenu .blocDropdownMenu__dropdown :nth-child(4) {
+  padding-bottom: 0.5rem;
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.drop {
+  display: block;
 }
 
 .blockHero {

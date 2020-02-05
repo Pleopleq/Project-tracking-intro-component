@@ -25,6 +25,15 @@
   </div>
 </div>
 
+<div class="blockDropdownMenu">
+  <ul class="blocDropdownMenu__dropdown">
+    <li><a href="#">Product</a></li>
+    <li><a href="#">Features</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#" blocked>Login</a></li>
+  </ul>
+</div>
+
 
 <div class="blockHero">
   <img class="blockHero__image" src="./images/illustration-devices.svg" alt="Phone and laptop" >
@@ -47,8 +56,10 @@
 
 
 <script>
+  const dropMenu = document.querySelector('.blockDropdownMenu');
   function myFunction(x) {
     x.classList.toggle("change");
+    dropMenu.classList.toggle('drop');
   }
   </script>
   <!-- <footer>

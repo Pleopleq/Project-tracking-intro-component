@@ -31,10 +31,10 @@ html{
 // NAVBAR STYLES
 .blockNavbar{
     display:flex;
-    padding: 10%;
+    padding: 2rem;
     justify-content: space-between;
     .blockNavbar__logo{
-        width: 8%;
+        width: 1.5rem;
         align-self: center;
     }
 }
@@ -66,6 +66,56 @@ html{
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
+
+//DROPDWON MENU STYLES
+.blockDropdownMenu{
+    display: none;
+    background-color: white;
+    margin: 1rem 4rem 1rem 4rem;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    -webkit-box-shadow: 10px 10px 31px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 31px -19px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 31px -19px rgba(0,0,0,0.75);
+    .blocDropdownMenu__dropdown{
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .blocDropdownMenu__dropdown a{
+        text-decoration: none;
+        color: $very-dark-blue;
+    }
+
+
+    .blocDropdownMenu__dropdown li{
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .blocDropdownMenu__dropdown :nth-child(1){
+        padding-top: 0.5rem;
+    }
+
+    .blocDropdownMenu__dropdown :nth-child(3){
+        border-bottom: 1px solid $light-grayish-blue;
+        padding-bottom: 0.5rem;
+    }
+
+    .blocDropdownMenu__dropdown :nth-child(4){
+        padding-bottom: 0.5rem;
+        color: currentColor;
+        cursor: not-allowed;
+        opacity: 0.5;
+        text-decoration: none;
+    }
+}
+.drop{
+    display: block;
+}
+
+
 
 // HERO STYLES
 
@@ -127,6 +177,7 @@ html{
 }
 
 //CALL TO ACTION STYLES 
+
 .blockCTA{
     display: flex;
     justify-content: space-around;
@@ -151,3 +202,12 @@ html{
         letter-spacing: 1.5px;
     }
 }
+
+
+// @media (min-width: 1024px) { 
+// .blockNavbar{
+//     padding: 3rem;
+// }
+    
+// }
+
