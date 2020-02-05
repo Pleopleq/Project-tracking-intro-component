@@ -40,6 +40,9 @@ html{
 }
 
 //HAMBURGER MENU STYLES
+.blockDesktopMenu{
+    display:none;
+}
 
 .blockHamMenu {
     display: inline-block;
@@ -67,6 +70,7 @@ html{
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
+
 //DROPDWON MENU STYLES
 .blockDropdownMenu{
     display: none;
@@ -78,6 +82,7 @@ html{
     -webkit-box-shadow: 10px 10px 31px -19px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 31px -19px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 31px -19px rgba(0,0,0,0.75);
+    
     .blocDropdownMenu__dropdown{
         list-style-type: none;
         text-align: center;
@@ -87,7 +92,6 @@ html{
         text-decoration: none;
         color: $very-dark-blue;
     }
-
 
     .blocDropdownMenu__dropdown li{
         margin-bottom: 0.5rem;
@@ -204,10 +208,97 @@ html{
 }
 
 
-// @media (min-width: 1024px) { 
-// .blockNavbar{
-//     padding: 3rem;
-// }
-    
-// }
+@media (min-width: 835px){
+    .blockNavbar{
+        padding: 4rem;
+    }
+    .blockHamMenu{
+        display:none;
+    }
+    .blockDesktopMenu{
+        display: flex;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
 
+        .bullet{
+            margin-right: 1rem;
+        }
+
+        .blockDesktopMenu__links{
+        display: inline-flex;
+        list-style-type: none;
+        text-align: center;
+        }
+
+        .blockDesktopMenu__links :nth-child(4){
+            padding-bottom: 0.5rem;
+            color: currentColor;
+            cursor: not-allowed;
+            opacity: 0.2;
+            text-decoration: none;
+        }
+
+        .blockDesktopMenu__links :nth-child(5){
+            padding-bottom: 0.5rem;
+            color: currentColor;
+            cursor: not-allowed;
+            opacity: 0.6;
+            text-decoration: none;
+        }
+        
+        .blockDesktopMenu__links a{
+        text-decoration: none;
+        color: $very-dark-blue;
+        margin-right: 1.6rem;
+        }
+    }
+    .blockDescription__header{
+        text-align: center;
+    }
+    .blockDescription__paragraph{
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 1024px)  { 
+    html{
+        font-size: 24px;
+    }
+    .desktop{
+        display: flex;
+    }
+    .desktopContent{
+        align-self: end;
+        order: -1;
+    }
+    .desktopHero{
+        order: 1;
+    }
+    .blockHero{
+        width: 50vw; 
+        overflow: hidden;
+        margin-bottom: 2rem;
+        .blockHero__image{
+            width: 125%;
+        }
+    }
+    .blockDescription__header{
+        text-align: left;
+    }
+    .blockDescription__paragraph{
+        text-align: left;
+    }
+}
+
+
+@media (min-width: 1440px) { 
+    .blockDescription{
+        padding: 0rem 5rem 0rem 5rem;
+    }
+    .blockAttributes{
+        padding: 0rem 5rem 0rem 5rem;
+    }
+
+}
